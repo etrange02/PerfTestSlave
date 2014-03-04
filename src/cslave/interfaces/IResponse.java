@@ -1,6 +1,3 @@
-/**
- * 
- */
 package cslave.interfaces;
 
 /** 
@@ -16,7 +13,7 @@ public interface IResponse {
 	 * @return
 	 * @generated "UML vers Java (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
 	 */
-	public Integer getDelay();
+	public int getDelay();
 
 	/** 
 	 * <!-- begin-UML-doc -->

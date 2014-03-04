@@ -12,48 +12,37 @@ import cslave.interfaces.IResponse;
  * @generated "UML vers Java (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
  */
 public class Response implements IResponse {
-	/** 
-	 * <!-- begin-UML-doc -->
-	 * <!-- end-UML-doc -->
-	 * @generated "UML vers Java (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
-	 */
-	private Integer delay = 0;
+
+	private int delay;
+	private byte[] serverBinaryResponse;
+	
+	public Response() {
+		this.delay = 0;
+		this.serverBinaryResponse = new byte[1024];
+	}
 
 	/** 
 	 * @return delay
 	 * @generated "UML vers Java (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
 	 */
-	public Integer getDelay() {
-		// begin-user-code
+	public int getDelay() {
 		return delay;
-		// end-user-code
 	}
 
 	/** 
 	 * @param delay delay � d�finir
 	 * @generated "UML vers Java (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
 	 */
-	public void setDelay(Integer delay) {
-		// begin-user-code
+	public void setDelay(int delay) {
 		this.delay = delay;
-		// end-user-code
 	}
-
-	/** 
-	 * <!-- begin-UML-doc -->
-	 * <!-- end-UML-doc -->
-	 * @generated "UML vers Java (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
-	 */
-	private byte[] serverBinaryResponse;
 
 	/** 
 	 * @return serverBinaryResponse
 	 * @generated "UML vers Java (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
 	 */
 	public byte[] getServerBinaryResponse() {
-		// begin-user-code
 		return serverBinaryResponse;
-		// end-user-code
 	}
 
 	/** 
@@ -61,8 +50,6 @@ public class Response implements IResponse {
 	 * @generated "UML vers Java (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
 	 */
 	public void setServerBinaryResponse(byte[] serverBinaryResponse) {
-		// begin-user-code
 		this.serverBinaryResponse = serverBinaryResponse;
-		// end-user-code
 	}
 }
